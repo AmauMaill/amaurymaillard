@@ -1,0 +1,61 @@
+@import url('reset.css');
+@import url('variables.css');
+@import url('social.css');
+@import url('project.css');
+
+body {
+    background-color: var(--pastel-yellow);
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section {
+    width: 100%;
+}
+
+a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: var(--pastel-blue)
+}
+  
+h1 {
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+}
+
+footer, footer {
+    background-color: var(--pastel-yellow);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer {
+    margin: 40px;
+}

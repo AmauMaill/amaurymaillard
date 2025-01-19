@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Amaury Maillard</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Mes Projets</a>
+        <a href="#socials">Interagir</a>
+    </header>
+    <main>
+      <!-- About section  -->
+      <section id="about">
+        <h1>À propos !</h1>
+        <p>
+          Passionné par le développement logiciel, je me spécialise
+          principalement dans le backend et l’ingénierie de données, où je
+          transforme des idées en solutions robustes et performantes.
+        </p>
+        <p>
+          En parallèle de mes activités professionnelles, je suis fier de
+          contribuer bénévolement à TiCoop, un supermarché coopératif à Brest,
+          où je mets mes compétences en informatique au service d’un projet
+          collectif et solidaire.
+        </p>
+        <p>
+          Sur ce site, je partage mes réalisations, qu’il s’agisse de projets
+          que j’ai créés ou auxquels j’ai apporté ma pierre en tant que
+          contributeur.
+        </p>
+      </section>
+      <!-- Projects section -->
+      <section id="projects">
+        <h1>Mes projets</h1>
+        <div class="projects">
+          <x-project title="This Website" link=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint consectetur voluptatibus voluptates possimus est similique laborum nesciunt quis? Nisi est nobis rem esse illum exercitationem accusantium architecto nihil quis. </x-project>
+          <x-project title="Ticoop" link=""> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia est quam dolores perferendis consectetur odio eligendi harum velit temporibus cumque eveniet delectus numquam quasi perspiciatis quis, quos nam totam dolore! </x-project>
+        </div>
+      </section>
+      <!-- Socials section  -->
+      <section id="socials">
+        <h1>Interagir</h1> <!-- Title inside the section -->
+        <div class="social-icons">
+          <x-social
+            src="assets/svg/linkedin.svg"
+            alt="linkedin"
+            href="https://linkedin.com/in/amaury-maillard"
+          ></x-social>
+          <x-social
+            src="assets/svg/github.svg"
+            alt="github"
+            href="https://github.com/AmauMaill"
+          ></x-social>
+        </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
