@@ -1,5 +1,7 @@
 x-project {
     display: inline-block;
+    border: 1px dashed var(--pastel-blue);
+    padding: 1rem;
 }
 
 x-project h1 {
@@ -15,4 +17,4 @@ x-project p {
     align-items: center;
     flex-direction: column;
     gap: 15px;
-  }
+}
