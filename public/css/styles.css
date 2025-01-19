@@ -30,6 +30,7 @@ nav {
 
 section {
     width: 100%;
+    margin-top: 30px;
 }
 
 a {
@@ -42,14 +43,19 @@ a {
 a:hover {
     color: var(--pastel-blue)
 }
+
+p {
+    margin-bottom: 1rem;
+}
   
 h1 {
     text-align: left;
     color: black;
     margin-bottom: 20px;
+    font-size: 2.5rem;
 }
 
-footer, footer {
+header, footer {
     background-color: var(--pastel-yellow);
     width: 100%;
     padding: 10px 0;

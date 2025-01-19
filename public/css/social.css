@@ -1,16 +1,39 @@
 x-social {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+}
+
+x-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    width: 4rem;
+    height: 4rem;
 }
 
 x-social img {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    object-fit: contain;
+}
+
+x-social a:hover img,
+x-social a:focus img {
+    transform: scale(1.1);
 }
 
 .social-icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-  }
+    gap: 1.5rem;
+    padding: 1rem;  
+}
