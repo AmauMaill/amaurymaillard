@@ -23,7 +23,7 @@ class Project extends HTMLElement {
     const link = this.getAttribute("link") || "#";
 
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="${import.meta.resolve('/assets/css/styles.css')}">
+      <link rel="stylesheet" href="${import.meta.resolve('/public/css/styles.css')}">
       <div>
         <h1>${title}</h1>
         <p><slot>No additional content provided.</slot></p>

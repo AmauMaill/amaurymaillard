@@ -24,7 +24,7 @@ class Social extends HTMLElement {
       const href = this.getAttribute("href") || "#";
   
       this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="${import.meta.resolve('/assets/css/styles.css')}">
+        <link rel="stylesheet" href="${import.meta.resolve('/public/css/styles.css')}">
         <div>
           ${
             src

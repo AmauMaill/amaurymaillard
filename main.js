@@ -1,2 +1,2 @@
-import Project from './assets/components/project.js';
-import Social from './assets/components/social.js';
+import Project from './public/components/project.js';
+import Social from './public/components/social.js';
