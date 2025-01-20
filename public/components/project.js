@@ -37,12 +37,26 @@ class Project extends HTMLElement {
       <div>
         <h1>${title}</h1>
         <p><slot>No additional content provided.</slot></p>
-        <a href="${link}">En savoir plus !</a>
+        <a href="${link}" target="_blank" rel="noopener noreferrer">En savoir plus !</a>
       </div>
     `;
 
     this.shadowRoot.appendChild(linkELem); // Global style
     this.shadowRoot.appendChild(style); // Custom style
+
+    // Ajout des attributs aux liens dans le slot
+    const slot = this.shadowRoot.querySelector('slot');
+    if (slot) {
+        slot.addEventListener('slotchange', () => {
+            const assignedElements = slot.assignedNodes({ flatten: true });
+            assignedElements.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'A') {
+                    node.setAttribute('target', '_blank');
+                    node.setAttribute('rel', 'noopener noreferrer');
+                }
+            });
+        });
+    }
   }
 }
 
