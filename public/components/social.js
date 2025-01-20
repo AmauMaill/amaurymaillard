@@ -21,9 +21,10 @@ class Social extends HTMLElement {
       const src = this.getAttribute("src") || "";
       const alt = this.getAttribute("alt") || "";
       const href = this.getAttribute("href") || "#";
+      const arialLabel = this.getAttribute("aria-label") || "";
   
       this.innerHTML = `
-          <a href="${href}" target="_blank" rel="noopener noreferrer">
+          <a href="${href}" aria-label="${arialLabel}" role="link" target="_blank" rel="noopener noreferrer">
                    <img src="${src}" alt="${alt}" />
           </a>
       `;

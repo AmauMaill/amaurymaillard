@@ -34,7 +34,7 @@ class Project extends HTMLElement {
     `
 
     this.shadowRoot.innerHTML = `
-      <div>
+      <div role="article">
         <h1>${title}</h1>
         <p><slot>No additional content provided.</slot></p>
         <div>

@@ -9,11 +9,12 @@
   </head>
   <body>
     <header>
-      <img src="public/img/profile.webp" alt="profile" id="profile">
-      <nav>
+      <img src="public/img/profile.webp" alt="Photo de profil d'Amaury Maillard" id="profile">
+      <nav aria-label="Navigation principale">
         <a href="#about">À propos</a>
         <a href="#projects">Mes Projets</a>
         <a href="#socials">Interagir</a>
+      </nav>
     </header>
     <main>
       <!-- About section  -->
@@ -50,18 +51,21 @@
         <nav class="social-icons" aria-label="Social media links">
           <x-social
             src="public/svg/linkedin.svg"
-            alt="linkedin"
+            alt="Visitez le profil LinkedIn"
             href="https://linkedin.com/in/amaury-maillard"
+            aria-label="Voir le profil LinkedIn"
           ></x-social>
           <x-social
             src="public/svg/github.svg"
-            alt="github"
+            alt="Visitez le profil GitHub"
             href="https://github.com/AmauMaill"
+            aria-label="Voir le profil GitHub"
           ></x-social>
           <x-social
             src="public/svg/gitlab.svg"
-            alt="gitlab"
+            alt="Visitez le profil GitLab"
             href="https://gitlab.com/AmauMaill"
+            aria-label="Voir le profil GitLab"
           ></x-social>
         </div>
       </section>
