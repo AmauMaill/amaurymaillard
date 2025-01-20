@@ -37,7 +37,10 @@ class Project extends HTMLElement {
       <div>
         <h1>${title}</h1>
         <p><slot>No additional content provided.</slot></p>
-        <a href="${link}" target="_blank" rel="noopener noreferrer">En savoir plus !</a>
+        <div>
+          <span>&rarr;<span/>
+          <a href="${link}" target="_blank" rel="noopener noreferrer">En savoir plus !</a>
+        <div>
       </div>
     `;
 

@@ -2,6 +2,9 @@ x-project {
     display: inline-block;
     border: 1px dashed var(--pastel-blue);
     padding: 1rem;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 .projects {
