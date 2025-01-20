@@ -19,17 +19,30 @@ class Project extends HTMLElement {
   }
 
   render() {
+    const linkELem = document.createElement("link");
+    linkELem.setAttribute("rel", "stylesheet");
+    linkELem.setAttribute("href", "public/css/styles.css")
+
     const title = this.getAttribute("title") || "Default Title";
     const link = this.getAttribute("link") || "#";
 
+    const style = document.createElement("style");
+    style.textContent = `
+    h1 {
+      font-size: 1.5rem;
+    }
+    `
+
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="public/css/styles.css">
       <div>
         <h1>${title}</h1>
         <p><slot>No additional content provided.</slot></p>
-        <a href="${link}">Learn more</a>
+        <a href="${link}">En savoir plus !</a>
       </div>
     `;
+
+    this.shadowRoot.appendChild(linkELem); // Global style
+    this.shadowRoot.appendChild(style); // Custom style
   }
 }
 

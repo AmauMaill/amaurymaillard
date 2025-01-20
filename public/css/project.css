@@ -4,14 +4,6 @@ x-project {
     padding: 1rem;
 }
 
-x-project h1 {
-    margin-bottom: 1rem;
-}
-
-x-project p {
-    margin-bottom: 1rem;
-}
-
 .projects {
     display: flex;
     align-items: center;

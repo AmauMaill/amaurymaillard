@@ -34,15 +34,19 @@ section {
     margin-top: 30px;
 }
 
-a {
+nav a {
     margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+a {
     text-decoration: underline;
     text-decoration-thickness: 1px; 
     text-decoration-style: dashed;
     text-decoration-color: var(--pastel-blue);
     text-underline-offset: 2px;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 a:hover {
@@ -51,6 +55,7 @@ a:hover {
 
 p {
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
   
 h1 {
